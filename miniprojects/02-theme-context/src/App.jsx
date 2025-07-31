@@ -1,15 +1,15 @@
 // App.jsx
-import { useTheme } from './ThemeContext';  // Importar el hook del tema
-import ThemeToggler from './ThemeToggler';  // Componente que alterna el tema
+import { useTheme } from './ThemeContext'; 
+import ThemeToggler from './ThemeToggler';  
 import './styles/App.css';
 
 function App() {
-  const { theme } = useTheme(); // Obtener el estado del tema
+  const { theme } = useTheme(); 
 
   const appStyle = {
     backgroundColor: theme === 'dark' ? '#333' : 'white',
     color: theme === 'dark' ? 'white' : 'black',
-    transition: 'background-color 0.3s, color 0.3s', // Transición suave
+    transition: 'background-color 0.3s, color 0.3s', 
   };
 
   return (

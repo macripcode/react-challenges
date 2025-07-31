@@ -1,8 +1,8 @@
 // ThemeToggler.jsx
-import { useTheme } from './ThemeContext'; // Importar el hook de contexto
+import { useTheme } from './ThemeContext'; 
 
 function ThemeToggler() {
-  const { theme, toggleTheme } = useTheme(); // Obtener el estado del tema y la función toggle
+  const { theme, toggleTheme } = useTheme(); 
 
   return (
     <div>
